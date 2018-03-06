@@ -97,7 +97,7 @@ class MyWorkoutList extends Component {
 
                     </Col>
                     <Col lg={6} md={6} sm={6} xs={6} style={{display:'flex',flexDirection:'row',alignItems:'flex-end',justifyContent:'flex-end'}}>
-                        <Button bsStyle="primary" onClick={()=>this.setState({deleteWorkoutList:true})}>Delete New Workout List</Button>
+                        <Button bsStyle="primary" onClick={()=>this.setState({deleteWorkoutList:true})}>Delete Workout List</Button>
                         <Button bsStyle="primary" onClick={()=>this.setState({addWorkoutList:true})}>Create New Workout List</Button>
                     </Col>
                 </div>

@@ -36,12 +36,10 @@ class LevelOfInjuries extends Component {
         //set this value
         var done = false;
 
-        done = firebaseFunction.initializeUser(options.loiOption[i]);
+        done = firebaseFunction.initializeUser(options.loiOption[i],this);
         //
         //this.props.history.push('/app/main');
-        if(done){
-            this.props.history.push('/app/main');
-        }
+
 
 
         //this.setState({redirect:true})

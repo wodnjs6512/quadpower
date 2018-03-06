@@ -334,7 +334,6 @@ class SelectPart extends Component {
                             <br/>
                             <hr style={styles.horizontalLine}/>
                             <br/>
-                            {this.state.title}
                             <div className="center">
                                 <Button onClick={()=>firebaseFunctions.addWorkoutList(this,this.state.title)}>Submit</Button>
                             </div>

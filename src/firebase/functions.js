@@ -97,7 +97,7 @@ export const join =(email,password)=>{
         });
 }
 
-export const initializeUser = (option)=>{
+export const initializeUser = (option,context)=>{
     firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({
         loi:option,
         auth:0,
@@ -106,6 +106,7 @@ export const initializeUser = (option)=>{
         }
 
     }).then(()=>{
+        context.props.history.push('/app/main');
         return true;
     }).catch((error)=>{
         alert(error)
@@ -272,8 +273,8 @@ export const getWorkoutList=(context)=>{
                 itemList.push(value);
                 keyList.push(item.key);
             }
-
         });
+
         context.setState({loading:false,current:0})
     })
 

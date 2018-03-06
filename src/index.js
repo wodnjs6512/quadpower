@@ -5,7 +5,8 @@ import registerServiceWorker from './registerServiceWorker';
 import {
     BrowserRouter as Router,
     Route,
-    Redirect
+    Redirect,
+    Switch
 } from 'react-router-dom';
 
 // bodies
@@ -24,12 +25,11 @@ firebaseFunction.init();
 ReactDOM.render(
     <div>
         <Router>
-            <div>
-
-                <Route exact path="/*" component={Redirection}/>
+            <Switch>
                 <Route exact path="/login" component={LoginPage}/>
                 <Route path="/app/*" component={MainPage}/>
-            </div>
+                <Route exact path="/*" component={Redirection}/>
+            </Switch>
         </Router>
     </div>
 
