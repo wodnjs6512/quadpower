@@ -18,7 +18,6 @@ const leftIntro = post => (
 
             <p>The use of this app is at the discretion and responsibility of the user.</p>
 
-
             <img src={require('./../images/McGill_Wordmark.png')} alt="" style={{position:'absolute',bottom:30,left:30,height:'10%'}}/>
 
     </div>

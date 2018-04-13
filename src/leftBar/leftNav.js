@@ -378,6 +378,8 @@ class LeftNav extends Component {
                         }
 
                         <Button bsStyle="primary" onClick={()=>firebaseFunctions.logout()}>Log Out</Button>
+                        <br/>
+                        <p>Github : <a href="https://github.com/wodnjs6512/quadpower">https://github.com/wodnjs6512/quadpower</a></p>
                     </ButtonGroup>
                     {this.state.addVid?this.addVid():null}
                     {this.state.addCategory?this.addCategory():null}
